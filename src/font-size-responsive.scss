@@ -1,0 +1,19 @@
+$sm: "(max-width: 767px)";
+$md: "(min-width: 768px) and (max-width: 1023px)";
+$lg: "(min-width: 1024px)";
+
+p {
+  font-size: 22px;
+}
+
+@media #{$sm} {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media #{$md} {
+  p {
+    font-size: 18px;
+  }
+}

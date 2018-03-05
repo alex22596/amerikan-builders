@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body,
+.view,
+.carousel,
+.carousel-item,
+.active,
+.carousel-inner,
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100vw !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  padding: 0 1em 0 1em !important;
+}
+
+li .active {
+  border-bottom: 3px solid #e53935;
+  padding: 5px;
+  margin: 0;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-nav-collapse {
+  background-color: #0d47a1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #0d47a1 !important;
+  }
+}

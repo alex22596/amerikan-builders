@@ -1,0 +1,32 @@
+{
+  "navbar-component": {
+    "welcome": "Bienvenido",
+    "roofing": "Roofing",
+    "impact-door-windows": "Impact Door & Windows",
+    "general-construction": "Construcción General",
+    "finance": "Financiamiento",
+    "contact-us": "Contáctenos"
+  },
+  "carousel-component": {
+    "first-heading": "Todo Tipo de Roofing y Construcción General",
+    "first-paragraph": "'We Bing Bing Every Job'",
+    "second-heading": "Financiamiento Disponible",
+    "second-paragraph": "Precio Inicial, Sin Costos Ocultos",
+    "third-heading": "Contamos con Más de 20 Años de Experiencia en Construcción",
+    "third-paragraph": "Nuestra Calidad de Servicio Garantiza su Satisfacción"
+  },
+  "welcome-component": {
+    "welcome-heading": "Bienvenido",
+    "first-paragraph": "En Amerikan Builders creemos que ser un constructor primero marca la diferencia. Son quienes son y cómo trabajamos",
+    "second-paragraph": "Nuestra pasión por esta perspectiva es tan fuerte que guía todo lo que hacemos. Estamos aquí para defender el respeto por nuestro comercio, el arte de la artesanía y la ventaja de la autosuficiencia.",
+    "third-paragraph": "Si bien nuestros valores son intemporales, aceptamos fácilmente nuevas tecnologías y nuevas formas de resolver los mayores desafíos de la industria de la construcción residencial y comercial. Somos Amerikan Builders y nuestra misión es elevar el nivel de lo que puede ser un verdadero constructor."
+  },
+  "ygrene-info-component": {
+    "first-heading": "Financiamiento"
+  },
+  "footer-component": {
+    "contact-us-heading": "Contáctenos",
+    "switch-language-button": "Do you Speak English?",
+    "copyright-text": "© 2018 Todos los Derechos Reservados."
+  }
+}

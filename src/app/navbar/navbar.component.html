@@ -1,0 +1,29 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar transparent" [containerInside]="false">
+  <logo>
+    <a class="navbar-brand" href="#">
+      <img src="./../assets/images/logoT.png" height="30" alt="" class="logo">
+    </a>
+  </logo>
+  <links>
+    <ul id="navbar-example" class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#welcome'">{{'navbar-component.welcome' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.roofing' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.impact-door-windows' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.general-construction' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#ygrene-info'">{{'navbar-component.finance' | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#contact-us'">{{'navbar-component.contact-us' | translate}}</a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
