@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./roofing.component.scss']
 })
 export class RoofingComponent {
-  imagesBasic = [
+  images = [
     {
       img:
         'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg',
