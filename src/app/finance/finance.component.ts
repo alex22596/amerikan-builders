@@ -8,7 +8,7 @@ import { CurrentLanguageService } from './../current-language.service';
 })
 export class FinanceComponent implements OnInit {
 
-  constructor(protected currentLangService: CurrentLanguageService) { }
+  constructor(public currentLangService: CurrentLanguageService) { }
 
   ngOnInit() {
   }
