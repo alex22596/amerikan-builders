@@ -7,10 +7,10 @@
   <links>
     <ul id="navbar-example" class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#welcome'">{{'navbar-component.welcome' | translate}}</a>
+        <a class="nav-link waves-light" routerLink="/" mdbRippleRadius>{{'navbar-component.welcome' | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.roofing' | translate}}</a>
+        <a class="nav-link waves-light" mdbRippleRadius routerLink="/roofing">{{'navbar-component.roofing' | translate}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.impact-door-windows' | translate}}</a>
@@ -19,7 +19,7 @@
         <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#services'">{{'navbar-component.general-construction' | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#ygrene-info'">{{'navbar-component.finance' | translate}}</a>
+        <a class="nav-link waves-light" routerLink="finance" mdbRippleRadius [ngx-scroll-to]="'#ygrene-info'">{{'navbar-component.finance' | translate}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link waves-light" mdbRippleRadius [ngx-scroll-to]="'#contact-us'">{{'navbar-component.contact-us' | translate}}</a>

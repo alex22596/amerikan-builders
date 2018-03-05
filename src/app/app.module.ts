@@ -8,6 +8,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { CurrentLanguageService } from './current-language.service';
+import { Routes, RouterModule } from '@angular/router';
 import { MDBBootstrapModule } from './typescripts/free';
 import { MDBBootstrapModulePro } from './typescripts/pro/index';
 import { AgmCoreModule } from '@agm/core';
@@ -18,11 +19,19 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { FinanceComponent } from './finance/finance.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { ServicesComponent } from './services/services.component';
+import { RoofingComponent } from './roofing/roofing.component';
+import { ImpactDoorAndWindowsComponent } from './impact-door-and-windows/impact-door-and-windows.component';
+import { GeneralConstructionComponent } from './general-construction/general-construction.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
+
+const routes: Routes = [
+  {path: '', component: WelcomeComponent},
+  {path: 'finance', component: FinanceComponent},
+  {path: 'roofing', component: RoofingComponent}
+];
 
 @NgModule({
   declarations: [
@@ -32,7 +41,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     FinanceComponent,
     NavbarComponent,
     FooterComponent,
-    ServicesComponent
+    RoofingComponent,
+    ImpactDoorAndWindowsComponent,
+    GeneralConstructionComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +64,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
       apiKey: 'Your_api_key'
-    })
+    }),
+    RouterModule.forRoot(routes)
   ],
   providers: [
     MDBSpinningPreloader,
