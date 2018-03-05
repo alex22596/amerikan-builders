@@ -1,5 +1,5 @@
 import { ToastModule } from './typescripts/pro/alerts/toast/toast.module';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -27,6 +27,12 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+      'pinch': { enable: false },
+      'rotate': { enable: false }
+  };
+}
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'finance', component: FinanceComponent},
@@ -69,7 +75,11 @@ const routes: Routes = [
   ],
   providers: [
     MDBSpinningPreloader,
-    CurrentLanguageService
+    CurrentLanguageService,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig,
+    }
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
