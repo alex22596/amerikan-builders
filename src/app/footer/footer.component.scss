@@ -3,16 +3,17 @@
 }
 
 #telephone-number,
-#email {
+#email, #fax {
   display: block;
 }
 
-#whatsapp-logo {
-  margin: 1.2em 1.2em 0 0;
-}
+a {
+  margin-bottom: 1.2em;
+} 
 
-#email {
-  margin-bottom: 1.5em;
+.fa-whatsapp, .fa-fax, .phone, .mail, .place  {
+  font-size: 24px;
+  margin-right: 0.8em; 
 }
 
 .margin-bottom {
@@ -33,26 +34,12 @@
   text-align: center;
 }
 
-a {
+a, i {
   vertical-align: bottom;
-}
-
-i {
-  vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 992px) {
   #email {
     margin-top: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .copyright-text {
-    text-align: left;
-  }
-
-  .social-networks {
-    text-align: right;
   }
 }
