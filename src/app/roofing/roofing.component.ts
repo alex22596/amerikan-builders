@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-roofing',
   templateUrl: './roofing.component.html',
   styleUrls: ['./roofing.component.scss']
 })
+
 export class RoofingComponent {
   images = [
     {
@@ -71,4 +73,18 @@ export class RoofingComponent {
       description: 'Image 9'
     }
   ];
+
+  @ViewChild('lightbox') public el: any;
+
+  @HostListener('swiperight', ['$event']) public swipePrev() {
+
+  this.el.prevImage();
+
+  }
+
+  @HostListener('swipeleft', ['$event']) public swipeNext() {
+
+    this.el.nextImage();
+
+  }
 }
