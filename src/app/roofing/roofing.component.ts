@@ -6,85 +6,64 @@ import { ViewChild, HostListener } from '@angular/core';
   templateUrl: './roofing.component.html',
   styleUrls: ['./roofing.component.scss']
 })
-
 export class RoofingComponent {
   images = [
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg',
-      description: 'Image 1'
+      img: './assets/images/tileRoof1.jpg',
+      thumb: './assets/images/tileRoof1.jpg',
+      description: 'Tile Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg',
-      description: 'Image 2'
+      img: './assets/images/tileRoof2.jpg',
+      thumb: './assets/images/tileRoof2.jpg',
+      description: 'Tile Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg',
-      description: 'Image 3'
+      img: './assets/images/tileRoof3.jpg',
+      thumb: './assets/images/tileRoof3.jpg',
+      description: 'Tile Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg',
-      description: 'Image 4'
+      img: './assets/images/shingleRoof1.jpg',
+      thumb: './assets/images/shingleRoof1.jpg',
+      description: 'Shingle Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg',
-      description: 'Image 5'
+      img: './assets/images/shingleRoof2.jpg',
+      thumb: './assets/images/shingleRoof2.jpg',
+      description: 'Shingle Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg',
-      description: 'Image 6'
+      img: './assets/images/shingleRoof3.jpg',
+      thumb: './assets/images/shingleRoof3.jpg',
+      description: 'Shingle Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg',
-      description: 'Image 7'
+      img: './assets/images/metalRoof1.JPG',
+      thumb: './assets/images/metalRoof1.JPG',
+      description: 'Metal Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg',
-      description: 'Image 8'
+      img: './assets/images/metalRoof2.JPG',
+      thumb: './assets/images/metalRoof2.JPG',
+      description: 'Metal Roof'
     },
     {
-      img:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg',
-      thumb:
-        'https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg',
-      description: 'Image 9'
+      img: './assets/images/flatRoof1.jpg',
+      thumb: './assets/images/flatRoof1.jpg',
+      description: 'Flat Roof'
     }
   ];
 
   @ViewChild('lightbox') public el: any;
 
-  @HostListener('swiperight', ['$event']) public swipePrev() {
-
-  this.el.prevImage();
-
+  @HostListener('swiperight', ['$event'])
+  public swipePrev() {
+    this.el.prevImage();
   }
 
-  @HostListener('swipeleft', ['$event']) public swipeNext() {
-
+  @HostListener('swipeleft', ['$event'])
+  public swipeNext() {
     this.el.nextImage();
-
   }
 }

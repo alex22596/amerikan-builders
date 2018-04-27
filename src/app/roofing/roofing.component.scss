@@ -1,16 +1,20 @@
- .parallax {
-    background-image: url('./../../assets/images/roof.jpeg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 75vh;
- }
+.parallax {
+  background-image: url("./../../assets/images/roofTile.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 75vh;
+}
 
- .intro {
-    min-height: 75vh;
- }
+.intro {
+  min-height: 75vh;
+}
 
- .full-bg-img {
-     background-color: rgba(0, 0, 0, 0.5);
- }
+.full-bg-img {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.material-icons.green600 {
+  color: #4caf50;
+}

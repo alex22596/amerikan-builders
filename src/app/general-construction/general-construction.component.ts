@@ -1,15 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-general-construction',
   templateUrl: './general-construction.component.html',
   styleUrls: ['./general-construction.component.scss']
 })
-export class GeneralConstructionComponent implements OnInit {
+export class GeneralConstructionComponent {
+  images = [
+    {
+      img: './assets/images/generalConstruction1.jpg',
+      thumb: './assets/images/generalConstruction1.jpg',
+      description: 'General Construction'
+    },
+    {
+      img: './assets/images/generalConstruction2.jpg',
+      thumb: './assets/images/generalConstruction2.jpg',
+      description: 'General Construction'
+    },
+    {
+      img: './assets/images/generalConstruction3.jpg',
+      thumb: './assets/images/generalConstruction3.jpg',
+      description: 'General Construction'
+    }
+  ];
 
-  constructor() { }
+  @ViewChild('lightbox') public el: any;
 
-  ngOnInit() {
+  @HostListener('swiperight', ['$event'])
+  public swipePrev() {
+    this.el.prevImage();
   }
 
+  @HostListener('swipeleft', ['$event'])
+  public swipeNext() {
+    this.el.nextImage();
+  }
 }

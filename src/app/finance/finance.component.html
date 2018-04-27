@@ -1,20 +1,35 @@
-<div class="container" id="ygrene-info">
-  <h1 class="red-text font-weight-bold">{{'ygrene-info-component.first-heading' | translate}}</h1>
+<div class="view intro hm-white-light parallax">
+  <div class="full-bg-img">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center align-parallax-text">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <h1 class="wow fadeInDown white-text" data-wow-delay="0.3s">Finance</h1>
+              <h3 class="wow fadeInDown white-text font-weight-bold" data-wow-delay="0.3s">We are certified by Ygrene</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container service-description wow pulse">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-5 vertical-align ygrene-logo">
         <a target="_blank" href="https://ygrene.com/">
-          <img src="./../../assets/images/ygrene-logo.png" alt="ygrene-logo" class="img-fluid wow fadeInLeft">
+          <img src="./../../assets/images/ygrene-logo.png" alt="ygrene-logo" class="img-fluid">
         </a>
       </div>
-      <div class="col-lg-6 col-md-7 embed-responsive embed-responsive-16by9 wow fadeInRight">
-        <iframe src="https://player.vimeo.com/video/184027168" width="640" height="360" frameborder="0"
-          webkitallowfullscreen mozallowfullscreen allowfullscreen *ngIf="currentLangService.currentLang === 'en'; else spanishVideo">Ygrene Video</iframe>
+      <div class="col-lg-6 col-md-7 embed-responsive embed-responsive-16by9">
+        <iframe src="https://player.vimeo.com/video/184027168" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+          allowfullscreen *ngIf="currentLangService.currentLang === 'en'; else spanishVideo">Ygrene Video</iframe>
         <ng-template #spanishVideo>
-          <iframe src="https://player.vimeo.com/video/121044014" width="640" height="360" frameborder="0"
-          webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/121044014" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         </ng-template>
-        </div>
+      </div>
     </div>
   </div>
 </div>

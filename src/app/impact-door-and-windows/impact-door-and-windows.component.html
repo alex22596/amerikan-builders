@@ -1,3 +1,60 @@
-<p>
-  impact-door-and-windows works!
-</p>
+<div class="view intro hm-white-light parallax">
+  <div class="full-bg-img">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center" style="height: 50vh">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <h1 class="wow fadeInDown white-text" data-wow-delay="0.3s">Impact Doors & Windows</h1>
+              <a class="btn btn-primary waves-light indigo wow fadeInDown" data-wow-delay="0.3s" mdbRippleRadius mdbPageScroll href="#gallery"
+                [pageScrollSpeed]="4000">
+                <i class="fa fa-images mr-1"></i> Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container service-description">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <ul>
+        <li class="grey-text">
+          <p>Modern Styles.</p>
+        </li>
+        <li class="grey-text">
+          <p>Frame colors: Bronze and white.</p>
+        </li>
+        <li class="grey-text">
+          <p>Glass: Variety of colors, texture and tint.</p>
+        </li>
+        <li class="grey-text">
+          <p>Insurance discount.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <ul>
+        <li class="grey-text">
+          <p>Custom Size.</p>
+        </li>
+        <li class="grey-text">
+          <p>Reduce external noises and heat.</p>
+        </li>
+        <li class="grey-text">
+          <p>NFRC certified.</p>
+        </li>
+        <li class="grey-text">
+          <p>Miami-Dade Building Product Control Division Approved.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="red-text font-weight-bold" id="gallery">Gallery</h1>
+  <div class="row">
+    <mdb-image-modal #lightbox [modalImages]='images' type='no-margin'></mdb-image-modal>
+  </div>
+</div>

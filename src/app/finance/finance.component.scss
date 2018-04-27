@@ -3,8 +3,28 @@
   text-align: center;
 }
 
+.parallax {
+  background-image: url("./../../assets/images/creditCard1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 75vh;
+}
+
+.intro {
+  min-height: 75vh;
+}
+
+.full-bg-img {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (max-width: 500px) {
   .ygrene-logo {
     text-align: center;
+  }
+  .align-parallax-text {
+    height:47vh;
   }
 }

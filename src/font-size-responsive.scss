@@ -3,7 +3,7 @@ $md: "(min-width: 768px) and (max-width: 1023px)";
 $lg: "(min-width: 1024px)";
 
 p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h1 {
@@ -17,6 +17,9 @@ h1 {
   h1 {
     font-size: 30px;
   }
+  h3 {
+    font-size: 22px;
+  }
 }
 
 @media #{$md} {
@@ -25,5 +28,8 @@ h1 {
   }
   h1 {
     font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
   }
 }

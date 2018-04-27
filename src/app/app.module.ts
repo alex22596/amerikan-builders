@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RoofingComponent } from './roofing/roofing.component';
 import { ImpactDoorAndWindowsComponent } from './impact-door-and-windows/impact-door-and-windows.component';
 import { GeneralConstructionComponent } from './general-construction/general-construction.component';
+import { NewComponentComponent } from './new-component/new-component.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +37,9 @@ export class MyHammerConfig extends HammerGestureConfig {
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'finance', component: FinanceComponent},
-  {path: 'roofing', component: RoofingComponent}
+  {path: 'roofing', component: RoofingComponent},
+  {path: 'impact-door-window', component: ImpactDoorAndWindowsComponent},
+  {path: 'general-construction', component: GeneralConstructionComponent}
 ];
 
 @NgModule({
@@ -49,7 +52,8 @@ const routes: Routes = [
     FooterComponent,
     RoofingComponent,
     ImpactDoorAndWindowsComponent,
-    GeneralConstructionComponent
+    GeneralConstructionComponent,
+    NewComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,59 @@
-<p>
-  general-construction works!
-</p>
+<div class="view intro hm-white-light parallax">
+  <div class="full-bg-img">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center align-parallax-text">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <h1 class="wow fadeInDown white-text" data-wow-delay="0.3s">General Construction</h1>
+              <a class="btn btn-primary waves-light indigo wow fadeInDown" data-wow-delay="0.3s" mdbRippleRadius mdbPageScroll href="#gallery"
+                [pageScrollSpeed]="4000">
+                <i class="fa fa-images mr-1"></i> Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container service-description">
+  <p class="grey-text">We provide all material, labor, tools, equipment to perform with high quality and safety your construction project.
+  </p>
+  <p class="grey-text">We apply for building permit following the engineering calculations and architectural plans according to the Florida Building
+    Code 6
+    <sup>th</sup> Edition (2017).</p>
+  <p class="grey-text">
+    We subcontract and supervice all trades: electrical, mecanica and plumbing works.
+  </p>
+  <p class="grey-text">
+    We having the construction wask:
+  </p>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li>
+          <p class="grey-text">Home and business remodeling.</p>
+        </li>
+        <li>
+          <p class="grey-text">New constructions.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          <p class="grey-text">Additions.</p>
+        </li>
+        <li>
+          <p class="grey-text">Screen enclosures especialist.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="red-text font-weight-bold" id="gallery">Gallery</h1>
+  <div class="row">
+    <mdb-image-modal #lightbox [modalImages]='images' type='no-margin'></mdb-image-modal>
+  </div>
+</div>
